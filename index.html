@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>הרפתקאות החפץ האבוד של מני וינר</title>
+    <title>מצאת חפץ של מני וינר</title>
     <style>
-        /* סגנונות כלליים */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
+            background: linear-gradient(to bottom, #f7f7f7, #d9d9f3);
             color: #333;
             margin: 0;
             padding: 0;
@@ -19,10 +18,11 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            text-align: center;
         }
 
         header {
-            background-color: #ffcc00;
+            background-color: #ff9800;
             padding: 20px;
             text-align: center;
             position: relative;
@@ -35,11 +35,18 @@
             text-shadow: 2px 2px #333;
         }
 
-        header img {
-            width: 100px;
+        /* כפתורי החלפת שפה */
+        .language-switcher {
             position: absolute;
-            top: -30px;
-            right: 20px;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .language-switcher img {
+            width: 30px;
+            cursor: pointer;
         }
 
         .story {
@@ -84,6 +91,13 @@
             margin-right: 10px;
         }
 
+        .icon-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -93,59 +107,118 @@
 
         /* אנימציות */
         @keyframes float {
-            0% { transform: translatey(0px); }
-            50% { transform: translatey(-20px); }
-            100% { transform: translatey(0px); }
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
         }
 
         .floating {
             animation: float 3s ease-in-out infinite;
         }
+
+        .container p.fun-text {
+            font-size: 1.4em;
+            color: #555;
+            margin-bottom: 30px;
+            animation: bounceIn 1.5s ease;
+        }
+
+        @keyframes bounceIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* סגנון אייקונים */
+        .contact-icons img {
+            width: 48px;
+            height: 48px;
+            transition: transform 0.3s;
+        }
+
+        .contact-icons img:hover {
+            transform: scale(1.2);
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://i.imgur.com/yourLostItemImage.png" alt="החפץ האבוד" class="floating">
-        <h1>הרפתקאות החפץ האבוד!</h1>
+        <div class="language-switcher">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg" alt="עברית" onclick="setLanguage('he')">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="English" onclick="setLanguage('en')">
+        </div>
+        <h1>מצאת חפץ של מני וינר!</h1>
     </header>
 
     <div class="container">
+        <p class="fun-text">ברכות! החפץ שגילית רוצה לחזור הביתה! עזור לו להגיע בחזרה למני.</p>
+
         <div class="story">
-            <p>שלום לך! אני החפץ האבוד של מני וינר. יצאתי להרפתקה מרגשת בעולם הגדול, אבל עכשיו אני קצת אבוד... האם תוכל לעזור לי לחזור הביתה?</p>
-            <p>במהלך המסע שלי פגשתי חתולים מצחיקים, כלבים ידידותיים, ואפילו דרקון קטן (אבל אל תדאג, הוא היה נחמד!).</p>
-            <img src="https://i.imgur.com/yourAdventureImage.png" alt="הרפתקאות">
-            <p>עכשיו, כשהרפתקאותיי הגיעו לסיומן, אני ממש מתגעגע למני. אתה האדם הנדיב שיכול לעזור לי לחזור אליו!</p>
+            <img src="https://i.imgur.com/yourLostItemImage.png" alt="החפץ האבוד">
+            <p>החפץ שלי יצא להרפתקה מדהימה... אבל עכשיו הוא אבוד והוא זקוק לעזרתך! במהלך המסע פגשתי חתולים שמחים, צבים מתוקים, ורוח שתפסה לי את הכובע.</p>
         </div>
 
         <div class="actions">
-            <p>לחץ על אחת האפשרויות הבאות כדי לעזור לי לחזור:</p>
-            <a href="tel:+972535401813">
-                <img src="https://img.icons8.com/color/48/000000/phone.png" alt="טלפון"> התקשר למני
-            </a>
-            <a href="sms:+972535401813">
-                <img src="https://img.icons8.com/color/48/000000/sms.png" alt="הודעה"> שלח הודעה
-            </a>
-            <a href="https://wa.me/972535401813" target="_blank">
-                <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp"> WhatsApp
-            </a>
-            <a href="https://www.facebook.com/meni.viner" target="_blank">
-                <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook"> Facebook
-            </a>
-            <a href="https://www.instagram.com/meni_viner" target="_blank">
-                <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"> Instagram
-            </a>
-            <a href="https://t.me/meni_viner" target="_blank">
-                <img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram"> Telegram
-            </a>
+            <p>באפשרותך ליצור קשר כדי להחזיר אותי:</p>
+            
+            <div class="icon-row">
+                <a href="tel:+972535401813">
+                    <img src="https://img.icons8.com/color/48/000000/phone.png" alt="התקשר"> התקשר למני
+                </a>
+                <a href="sms:+972535401813">
+                    <img src="https://img.icons8.com/color/48/000000/sms.png" alt="הודעה"> שלח הודעה
+                </a>
+            </div>
+
+            <div class="icon-row contact-icons">
+                <a href="https://wa.me/972535401813" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="https://www.instagram.com/meni_viner" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
+                </a>
+                <a href="https://t.me/meni_viner" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram">
+                </a>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>תודה שעזרת לי! אתה גיבור אמיתי!</p>
+        <p>תודה שעזרת לחפץ להגיע הביתה! אתה גיבור אמיתי!</p>
     </footer>
 
     <script>
-        // כאן ניתן להוסיף JavaScript נוסף אם תרצה
+        // פונקציה להחלפת שפה
+        const messages = {
+            'he': {
+                'title': 'מצאת חפץ של מני וינר!',
+                'funText': 'ברכות! החפץ שגילית רוצה לחזור הביתה! עזור לו להגיע בחזרה למני.',
+                'story': 'החפץ שלי יצא להרפתקה מדהימה... אבל עכשיו הוא אבוד והוא זקוק לעזרתך! במהלך המסע פגשתי חתולים שמחים, צבים מתוקים, ורוח שתפסה לי את הכובע.',
+                'actions': 'באפשרותך ליצור קשר כדי להחזיר אותי:',
+                'direction': 'rtl'
+            },
+            'en': {
+                'title': 'You found Meni Viner\'s item!',
+                'funText': 'Congratulations! The item you found wants to go back home. Help it return to Meni.',
+                'story': 'My item went on an amazing adventure... but now it\'s lost and needs your help! Along the way, I met happy cats, sweet turtles, and a wind that took my hat!',
+                'actions': 'You can contact Meni to return it:',
+                'direction': 'ltr'
+            }
+        };
+
+        function setLanguage(lang) {
+            document.querySelector('h1').textContent = messages[lang]['title'];
+            document.querySelector('.fun-text').textContent = messages[lang]['funText'];
+            document.querySelector('.story p').textContent = messages[lang]['story'];
+            document.querySelector('.actions p').textContent = messages[lang]['actions'];
+            document.body.style.direction = messages[lang]['direction'];
+        }
     </script>
 </body>
 </html>
