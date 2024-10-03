@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>החפץ האבוד של מני - עזרו לי למצוא את דרכי הביתה!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #FF6B6B;
+            --secondary-color: #4ECDC4;
+            --text-color: #333;
+            --background-color: #F7F7F7;
+            --icon-background: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            transition: background-color 10s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+        }
+
+        .story {
+            font-style: italic;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .contact-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: transform 0.3s ease;
+            width: 80px;
+        }
+
+        .contact-option:hover {
+            transform: scale(1.1);
+        }
+
+        .icon-wrapper {
+            width: 60px;
+            height: 60px;
+            background-color: var(--icon-background);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        .language-toggle {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .language-toggle button {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .language-toggle button:hover {
+            background-color: #45b7aa;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .bouncing {
+            animation: bounce 2s infinite;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .feature {
+            text-align: center;
+            width: 150px;
+        }
+
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h1 id="title" class="bouncing">אני החפץ האבוד של מני!</h1>
+            <p id="story" class="story">
+                היי שם! אני גאדג'ט קטן ובודד שאיבד את דרכו. הבעלים שלי, מני, בטח מודאג לגביי. עברתי הרפתקה מטורפת, אבל עכשיו אני מוכן לחזור הביתה. תוכלו לעזור לי להתאחד עם מני? זה יהיה משמעותי כל כך לשנינו!
+            </p>
+        </section>
+
+        <section>
+            <h2 id="contact-header">צור קשר עם מני</h2>
+            <div class="contact-options">
+                <a href="tel:+972535401813" class="contact-option">
+                    <div class="icon-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/512/552/552489.png" alt="טלפון" class="icon">
+                    </div>
+                    <span id="phone">טלפון</span>
+                </a>
+                <a href="sms:+972535401813" class="contact-option">
+                    <div class="icon-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733270.png" alt="הודעה" class="icon">
+                    </div>
+                    <span id="sms">הודעה</span>
+                </a>
+                <a href="https://wa.me/972535401813" class="contact-option">
+                    <div class="icon-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="וואטסאפ" class="icon">
+                    </div>
+                    <span id="whatsapp">וואטסאפ</span>
+                </a>
+                <a href="https://t.me/+972535401813" class="contact-option">
+                    <div class="icon-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="טלגרם" class="icon">
+                    </div>
+                    <span id="telegram">טלגרם</span>
+                </a>
+                <a href="https://www.instagram.com/Meni_viner" class="contact-option">
+                    <div class="icon-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="אינסטגרם" class="icon">
+                    </div>
+                    <span id="instagram">אינסטגרם</span>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="about-header">קצת עליי</h2>
+            <p id="about-text">
+                אני לא סתם חפץ רגיל - אני מיוחד למני! עברנו יחד המון דברים, ויש לנו כל כך הרבה זכרונות משותפים. להיות אבוד זה מפחיד, אבל אני יודע שבעזרתכם אוכל למצוא את דרכי חזרה הביתה.
+            </p>
+        </section>
+
+        <section>
+            <h2 id="features-header">למה כדאי לכם לעזור</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🦸‍♂️</div>
+                    <p id="feature1">תהיה גבר</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">😊</div>
+                    <p id="feature2">שמח מישהו</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🌟</div>
+                    <p id="feature3">קארמה טובה</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="thank-you-header">תודה רבה!</h2>
+            <p id="thank-you-text">
+                הנדיבות שלכם בעזרה לאחד אותי עם מני מוערכת מאוד. אנשים כמוכם הופכים את העולם למקום טוב יותר. תודה שלקחתם את הזמן לעזור לחפץ אבוד למצוא את דרכו הביתה!
+            </p>
+        </section>
+
+        <div class="language-toggle">
+            <button id="langToggle">English</button>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            he: {
+                title: "היי! יש! מצאו אותי!",
+                story: "היי ! אני גאדג'ט קטן ובודד שאיבד את דרכו. הבעלים שלי, מני, בטח מודאג לגביי. עברתי הרפתקה מטורפת, אבל עכשיו אני מוכן לחזור הביתה. תוכלו לעזור לי להתאחד עם מני? זה יהיה משמעותי כל כך לשנינו!",
+                "contact-header": "צור קשר עם מני",
+                phone: "תרים טלפון",
+                sms: "שלח הודעה",
+                whatsapp: "וואטסאפ",
+                telegram: "טלגרם",
+                instagram: "אינסטגרם",
+                "about-header": "קצת עליי",
+                "about-text": "אני לא סתם חפץ רגיל - אני מיוחד למני! עברנו יחד המון דברים, ויש לנו כל כך הרבה זכרונות משותפים. להיות אבוד זה מפחיד, אבל אני יודע שבעזרתך אוכל למצוא את דרכי חזרה הביתה.",
+                "features-header": "למה כדאי לכם לעזור",
+                feature1: "תהיה גבר",
+                feature2: "שמח מישהו",
+                feature3: "קארמה טובה",
+                "thank-you-header": "תודה רבה!",
+                "thank-you-text": "הנדיבות שלכם בעזרה לאחד אותי עם מני מוערכת מאוד. אנשים כמוכם הופכים את העולם למקום טוב יותר. תודה שלקחתם את הזמן לעזור לחפץ אבוד למצוא את דרכו הביתה!",
+                langToggle: "read in English"
+            },
+            en: {
+                title: "I'm Meni's Lost Item!",
+                story: "Hey there! I'm a lonely little gadget that's lost its way. My owner, Meni, is probably worried sick about me. I've been on quite an adventure, but now I'm ready to go home. Can you help reunite me with Meni? It would mean the world to both of us!",
+                "contact-header": "Contact Meni",
+                phone: "Phone",
+                sms: "SMS",
+                whatsapp: "WhatsApp",
+                telegram: "Telegram",
+                instagram: "Instagram",
+                "about-header": "About Me",
+                "about-text": "I'm not just any ordinary item - I'm special to Meni! I've been through thick and thin with my owner, and we've shared so many memories together. Being lost is scary, but I know with your help, I can find my way back home.",
+                "features-header": "Why You Should Help",
+                feature1: "Be a Hero",
+                feature2: "Make Someone Happy",
+                feature3: "Good Karma",
+                "thank-you-header": "Thank You!",
+                "thank-you-text": "Your kindness in helping reunite me with Meni is truly appreciated. It's people like you who make the world a better place. Thank you for taking the time to help a lost item find its way home!",
+                langToggle: "לקרוא בעברית "
+            }
+        };
+
+        let currentLang = 'he';
+
+        function updateLanguage(lang) {
+            Object.keys(translations[lang]).forEach(key => {
+                const element = document.getElementById(key);
+                if (element) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            document.documentElement.lang = lang;
+            document.body.style.direction = lang === 'he' ? 'rtl' : 'ltr';
+        }
+
+        document.getElementById('langToggle').addEventListener('click', function() {
+            currentLang = currentLang === 'he' ? 'en' : 'he';
+            updateLanguage(currentLang);
+        });
+
+        // Add some fun interactions
+        document.querySelectorAll('.contact-option').forEach(option => {
+            option.addEventListener('mouseover', function() {
+                this.querySelector('.icon-wrapper').classList.add('bouncing');
+            });
+            option.addEventListener('mouseout', function() {
+                this.querySelector('.icon-wrapper').classList.remove('bouncing');
+            });
+        });
+
+        // Smooth background color transition
+        function smoothColorTransition() {
+            const colors = ['#FFD3B6', '#DCEDC1', '#A8E6CF', '#FF8B94'];
+            let currentColorIndex = 0;
+
+            setInterval(() => {
+                currentColorIndex = (currentColorIndex + 1) % colors.length;
+                document.body.style.backgroundColor = colors[currentColorIndex];
+            }, 10000);
+        }
+
+        smoothColorTransition();
+    </script>
+</body>
+</html>
