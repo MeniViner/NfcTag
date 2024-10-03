@@ -1,6 +1,6 @@
 # Lost Item Landing Page
 
-![Lost Item Landing Page Screenshot](screenshot.jpg)
+![Lost Item Landing Page Screenshot](Screenshot.jpg)
 
 ## Overview
 
