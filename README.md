@@ -47,6 +47,5 @@ This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
 ## Contact
 
-Meni Viner - [on telegram](https://t.me/meniviner) - meniviner@gmail.com
-[https://img.icons8.com/color/48/000000/telegram-app.png](https://t.me/meniviner)
+Meni Viner - [![Telegram](https://img.icons8.com/color/48/000000/telegram-app.png)](https://t.me/meniviner)
 roject Link: [menis-lost-item](https://menislostitem.netlify.app/)
