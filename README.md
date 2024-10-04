@@ -41,12 +41,10 @@ To customize this landing page for your own lost item:
 
 Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/meniviner/lost-item-landing-page/issues) if you want to contribute.
 
-## License
-
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
-
 ## Contact
 
-Meni Viner - send me a message on:
+Meni Viner - send me a message on
+
 [![Telegram](https://img.icons8.com/color/48/000000/telegram-app.png)](https://t.me/meniviner)
+
 project Link: [menis-lost-item](https://menislostitem.netlify.app/)
